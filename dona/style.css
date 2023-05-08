@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+.wrapper {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.split {
+  width: 54ch;
+  animation: typing 2s steps(22), blink .8s step-end infinite alternate ;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px white solid ;
+  font-family: monospace;
+  font-size: 2.5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.split h2 span {
+  display: inline-block;
+  white-space: break-spaces;
+  transition: font-weight 0.2s ease;
+  position: relative;
+}
+
+.split h2 span::before,
+.split h2 span::after {
+  content: attr(data-char);
+  position: absolute;
+  left: 0;
+  color: transparent;
+}
+
+.split h2 span::after{
+  z-index: 2;
+  filter: none;
+  color: transparent;
+   background: linear-gradient(red, orange) 0% 0% / 400% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

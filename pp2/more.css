@@ -1,0 +1,153 @@
+body {
+  font-family: "proxima-nova", sans-serif;
+  padding: 0;
+  margin: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+   background:rgba(0,0,0,1);
+}
+
+
+
+.section1{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+   width: 80vh;
+    height: 50vh;
+    border: 4px solid white;
+    border-radius: 10%;
+    
+}
+h2 ,span{
+    color: white;
+    display: block;
+    text-align: center;
+   
+}
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  
+  
+ position: relative;
+    top: 20px;
+  
+  color: white;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  text-align: center;
+
+}
+
+
+
+
+
+  .button-wrapper-hor {
+          position: relative;
+          max-width: 200px;
+          height: 100%;
+          margin: 0 auto;
+        }
+  
+        .button-wrapper-ver {
+          position: absolute;
+          top: 50%;
+          width: 200px;
+          height: 100px;
+          margin-top: -50px;
+        }
+  
+        .button-wrapper-ver div {
+          display: block;
+          max-height: 1000px;
+        }
+  
+        .button-link {
+          position:relative;
+          cursor: pointer;
+          width: 180px;
+          margin: 10px;
+          text-align: center;
+          display: flex;
+            gap:20px;
+          border: 1px solid white;
+          border-radius: 2px;
+          color: #fff;
+          box-shadow: 0 1.5px rgba(255,255,255,0.15);
+            font-size: 20px;
+            font-family: serif;
+        }
+.button-link{
+    position: relative;
+    top: 10%;
+    right: 60%;
+}
+
+
+#prank-button{
+    position: relative;
+    top: -43%;
+    left: 60%;
+}
+  
+        .button-link a {
+          display:inline-block;
+          position: relative;
+          padding: 10px 20px;
+          text-decoration: none;
+          color: #fff;
+          cursor: pointer;
+        }
+
+
+
+
+
+
+
+
+   #ready {
+         display: none;
+         background: linear-gradient( red, orange,yellow,green,blue,purple);
+         
+       border-radius: 10%; 
+         position: fixed;
+         width: 1000px; 
+       height: 600px;
+         top: 10%;
+       left: 25%;
+         margin-left: -100px; 
+         padding: 6px 8px 8px; 
+         box-sizing: border-box; 
+         text-align: center;
+       color:black;
+       font-size: 70px;
+       z-index: 100;
+      }
+      #ready button {
+         background-color: transparent; 
+         display: inline-block; 
+         border-radius: 10%; 
+         border:0.5px solid transparent; 
+         padding: 5px;
+         text-align: center; 
+         width: 90px; 
+          height: 90px;
+         cursor: pointer;
+          position: relative;
+          top: 60%;
+          font-size: 60px;
+      }
+      #ready .message { 
+         text-align: center;
+      }
+.message{
+    position: relative;
+    top: 26%;
+}
